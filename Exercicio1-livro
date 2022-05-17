@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+	float notas [3];
+	int i;
+	
+	//solicita a nota através do printf e armazena através do scanf
+	for (i = 0; i<3; i++)
+	{
+		printf("Digite nota %i: ",i+1);
+		 scanf("%f", &notas[i]);		
+	}
+	//imprime as notas através do printf
+	for(i =0 ; i < 3 ; i++)
+	{
+           printf("Suas notas sao %.3f \n ", notas[i]);
+   }			
+	return;	
+}
+
