@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+
+int main()
+{
+	//declaração das variaveis e vetor
+   float notas[3];
+   int i = 0 ;
+   float soma =0;
+   float media =0;
+   
+	//O printf solicita as notas 1, 2 e 3 e o scanf lê armazena
+	//O soma+ realiza a soma dos vetores
+   for(i =0 ; i < 3 ; i++){
+       printf("Digite a nota %i: ",i+1);
+       scanf("%f",&notas[i]);
+       soma+=notas[i];
+   }
+   
+   //a variavel media pega o resultado da soma e divide por três através do operador "/" 
+   media = soma / 3 ;
+   
+   //o printf mostra as respectivas notas
+   for(i =0 ; i < 3 ; i++){
+           printf("Suas notas sao %.3f \n: ", notas[i]);
+   }
+   //o printf mostra a media das notas
+   printf("Sua media %3.f \n: ", media);
+   return 0;
+}
